@@ -7,7 +7,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist",
+    "deploy:gh-pages": "./scripts/deploy-gh-pages.sh"
   },
   "dependencies": {
     "@monaco-editor/react": "^4.7.0",
@@ -33,6 +35,9 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5.2.2",
     "typescript-eslint": "^8.30.1",
-    "vite": "^5.1.4"
+    "vite": "^5.1.4",
+    "@typescript-eslint/eslint-plugin": "^7.1.1",
+    "@typescript-eslint/parser": "^7.1.1",
+    "gh-pages": "^6.1.1"
   }
 }
