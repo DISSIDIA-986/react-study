@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { chapters } from '../content/chapters';
 
 export const Navigation: React.FC = () => {
   const location = useLocation();
@@ -11,7 +10,7 @@ export const Navigation: React.FC = () => {
 
   return (
     <nav className="bg-white shadow-sm">
-      <div className="max-w-7xl mx-auto px-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex">
             <Link
@@ -34,7 +33,7 @@ export const Navigation: React.FC = () => {
                 isActive('/challenges') ? 'text-blue-600' : 'text-gray-900 hover:text-blue-600'
               }`}
             >
-              练习挑战
+              实战挑战
             </Link>
             <Link
               to="/reference"

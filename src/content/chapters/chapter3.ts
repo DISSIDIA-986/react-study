@@ -90,9 +90,9 @@ const VirtualTaskList: React.FC<{ tasks: TaskProps[] }> = ({ tasks }) => {
   );
 };`,
       tasks: [
-        { id: 1, title: '实现基础列表渲染', completed: false },
-        { id: 2, title: '创建列表项组件', completed: false },
-        { id: 3, title: '实现虚拟列表', completed: false }
+        { id: '1', title: '实现基础列表渲染' },
+        { id: '2', title: '创建列表项组件' },
+        { id: '3', title: '实现虚拟列表' }
       ]
     },
     {
@@ -246,9 +246,9 @@ const TaskForm: React.FC<{ onSubmit: (data: TaskFormData) => void }> = ({ onSubm
   );
 };`,
       tasks: [
-        { id: 4, title: '实现基础表单', completed: false },
-        { id: 5, title: '添加表单验证', completed: false },
-        { id: 6, title: '实现错误处理', completed: false }
+        { id: '4', title: '实现基础表单' },
+        { id: '5', title: '添加表单验证' },
+        { id: '6', title: '实现错误处理' }
       ]
     },
     {
@@ -424,9 +424,9 @@ const AccessibleTaskForm: React.FC<{ onSubmit: (data: TaskFormData) => void }> =
   );
 };`,
       tasks: [
-        { id: 7, title: '实现防抖搜索', completed: false },
-        { id: 8, title: '添加表单持久化', completed: false },
-        { id: 9, title: '优化表单可访问性', completed: false }
+        { id: '7', title: '实现防抖搜索' },
+        { id: '8', title: '添加表单持久化' },
+        { id: '9', title: '优化表单可访问性' }
       ]
     }
   ]

@@ -134,9 +134,9 @@ const TaskManagerWithReducer: React.FC = () => {
   );
 };`,
       tasks: [
-        { id: 1, title: '使用React.memo优化组件', completed: false },
-        { id: 2, title: '实现useMemo优化', completed: false },
-        { id: 3, title: '使用useCallback优化回调', completed: false }
+        { id: '1', title: '使用React.memo优化组件' },
+        { id: '2', title: '实现useMemo优化' },
+        { id: '3', title: '使用useCallback优化回调' }
       ]
     },
     {
@@ -255,9 +255,9 @@ const TaskManagerWithErrorBoundary: React.FC = () => {
   );
 };`,
       tasks: [
-        { id: 4, title: '实现路由代码分割', completed: false },
-        { id: 5, title: '添加组件预加载', completed: false },
-        { id: 6, title: '实现错误边界', completed: false }
+        { id: '4', title: '实现路由代码分割' },
+        { id: '5', title: '添加组件预加载' },
+        { id: '6', title: '实现错误边界' }
       ]
     },
     {
@@ -413,9 +413,9 @@ const TaskManagerWithCachedState: React.FC = () => {
   );
 };`,
       tasks: [
-        { id: 7, title: '实现请求缓存', completed: false },
-        { id: 8, title: '添加组件缓存', completed: false },
-        { id: 9, title: '优化数据获取策略', completed: false }
+        { id: '7', title: '实现请求缓存' },
+        { id: '8', title: '添加组件缓存' },
+        { id: '9', title: '优化数据获取策略' }
       ]
     }
   ]
