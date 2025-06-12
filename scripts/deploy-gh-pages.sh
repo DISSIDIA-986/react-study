@@ -40,6 +40,14 @@ git commit -m "Add homepage configuration for GitHub Pages"
 echo "Pushing gh-pages branch to remote..."
 git push -u origin gh-pages
 
+# 安装依赖
+echo "Installing dependencies..."
+npm install --legacy-peer-deps
+
+# 构建项目
+echo "Building project..."
+npm run build
+
 # 部署到 GitHub Pages
 echo "Deploying to GitHub Pages..."
 npm run deploy
