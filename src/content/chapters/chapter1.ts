@@ -56,9 +56,9 @@ const TaskCard = ({ task }) => {
   );
 };`,
       tasks: [
-        { id: '1', title: '创建TaskItem组件' },
-        { id: '2', title: '创建TaskList组件' },
-        { id: '3', title: '实现条件渲染' }
+        { id: '1', title: '创建TaskItem组件', description: '' },
+        { id: '2', title: '创建TaskList组件', description: '' },
+        { id: '3', title: '实现条件渲染', description: '' }
       ]
     },
     {
@@ -128,9 +128,9 @@ const TaskContainer: React.FC<{ children: React.ReactNode }> = ({ children }) =>
   );
 };`,
       tasks: [
-        { id: '4', title: '实现TaskList组件' },
-        { id: '5', title: '添加Props类型检查' },
-        { id: '6', title: '实现组件组合' }
+        { id: '4', title: '实现TaskList组件', description: '' },
+        { id: '5', title: '添加Props类型检查', description: '' },
+        { id: '6', title: '实现组件组合', description: '' }
       ]
     },
     {
@@ -212,9 +212,9 @@ const TaskManagerOptimized: React.FC = () => {
   );
 };`,
       tasks: [
-        { id: '7', title: '添加useState Hook' },
-        { id: '8', title: '实现任务状态更新' },
-        { id: '9', title: '优化状态更新函数' }
+        { id: '7', title: '添加useState Hook', description: '' },
+        { id: '8', title: '实现任务状态更新', description: '' },
+        { id: '9', title: '优化状态更新函数', description: '' }
       ]
     }
   ]
