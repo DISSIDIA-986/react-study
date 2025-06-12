@@ -161,9 +161,9 @@ const TaskManager: React.FC = () => {
   );
 };`,
       tasks: [
-        { id: '1', title: '实现useLocalStorage Hook' },
-        { id: '2', title: '创建useTaskManager Hook' },
-        { id: '3', title: '实现useAsync Hook' }
+        { id: '1', title: '实现useLocalStorage Hook', description: '' },
+        { id: '2', title: '创建useTaskManager Hook', description: '' },
+        { id: '3', title: '实现useAsync Hook', description: '' }
       ]
     },
     {
@@ -348,9 +348,9 @@ const TaskManager: React.FC = () => {
   );
 };`,
       tasks: [
-        { id: '4', title: '实现基础错误边界' },
-        { id: '5', title: '添加重试功能' },
-        { id: '6', title: '实现错误日志记录' }
+        { id: '4', title: '实现基础错误边界', description: '' },
+        { id: '5', title: '添加重试功能', description: '' },
+        { id: '6', title: '实现错误日志记录', description: '' }
       ]
     },
     {
@@ -531,9 +531,9 @@ const App: React.FC = () => {
   );
 };`,
       tasks: [
-        { id: '7', title: '实现Modal Portal' },
-        { id: '8', title: '优化Context性能' },
-        { id: '9', title: '组合多个Context' }
+        { id: '7', title: '实现Modal Portal', description: '' },
+        { id: '8', title: '优化Context性能', description: '' },
+        { id: '9', title: '组合多个Context', description: '' }
       ]
     }
   ]
