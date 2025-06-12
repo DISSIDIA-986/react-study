@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { chapters } from '../../content/chapters';
 import { CodeEditor } from '../../components/CodeEditor';
-import { Task } from '../../types/course';
 
 export const Learn: React.FC = () => {
   const { chapterId, sectionId } = useParams<{ chapterId: string; sectionId: string }>();
@@ -29,7 +28,7 @@ export const Learn: React.FC = () => {
   }
 
   const currentSectionIndex = chapter.sections.findIndex((s) => s.id === sectionId);
-  const progress = (completedTasks.length / section.tasks.length) * 100;
+  const progress = section.tasks ? (completedTasks.length / section.tasks.length) * 100 : 0;
 
   const toggleTask = (taskId: string) => {
     setCompletedTasks((prev) =>
@@ -68,28 +67,30 @@ export const Learn: React.FC = () => {
         </div>
       )}
 
-      <div className="mb-8">
-        <h3 className="text-xl font-semibold text-gray-900 mb-4">练习任务</h3>
-        <div className="space-y-4">
-          {section.tasks.map((task) => (
-            <div
-              key={task.id}
-              className="flex items-start space-x-3 p-4 bg-white rounded-lg shadow-sm"
-            >
-              <input
-                type="checkbox"
-                checked={completedTasks.includes(task.id)}
-                onChange={() => toggleTask(task.id)}
-                className="mt-1"
-              />
-              <div>
-                <h4 className="font-medium text-gray-900">{task.title}</h4>
-                <p className="text-gray-600">{task.description}</p>
+      {section.tasks && section.tasks.length > 0 && (
+        <div className="mb-8">
+          <h3 className="text-xl font-semibold text-gray-900 mb-4">练习任务</h3>
+          <div className="space-y-4">
+            {section.tasks.map((task) => (
+              <div
+                key={task.id}
+                className="flex items-start space-x-3 p-4 bg-white rounded-lg shadow-sm"
+              >
+                <input
+                  type="checkbox"
+                  checked={completedTasks.includes(task.id)}
+                  onChange={() => toggleTask(task.id)}
+                  className="mt-1"
+                />
+                <div>
+                  <h4 className="font-medium text-gray-900">{task.title}</h4>
+                  <p className="text-gray-600">{task.description}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
+      )}
 
       <div className="flex justify-between">
         <button

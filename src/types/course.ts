@@ -1,7 +1,7 @@
 export interface Task {
-  id: number;
+  id: string;
   title: string;
-  completed: boolean;
+  description: string;
 }
 
 export interface Chapter {
@@ -9,17 +9,17 @@ export interface Chapter {
   title: string;
   description: string;
   duration: string;
-  difficulty: 'beginner' | 'intermediate' | 'advanced';
+  difficulty: 'beginner' | 'intermediate' | 'advanced' | '初级' | '中级' | '高级';
   sections: Section[];
 }
 
 export interface Section {
   id: string;
   title: string;
+  description: string;
   content: string;
   codeExample?: string;
-  tasks?: Task[];
-  completed?: boolean;
+  tasks: Task[];
 }
 
 export interface CourseProgress {
