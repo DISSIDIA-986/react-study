@@ -155,9 +155,9 @@ const TaskManager: React.FC = () => {
   );
 };`,
       tasks: [
-        { id: '1', title: '实现Props类型定义' },
-        { id: '2', title: '添加Props默认值' },
-        { id: '3', title: '实现Render Props模式' }
+        { id: '1', title: '实现Props类型定义', description: '' },
+        { id: '2', title: '添加Props默认值', description: '' },
+        { id: '3', title: '实现Render Props模式', description: '' }
       ]
     },
     {
@@ -313,9 +313,9 @@ const TaskManager: React.FC = () => {
   );
 };`,
       tasks: [
-        { id: '4', title: '创建TaskContext' },
-        { id: '5', title: '实现TaskProvider' },
-        { id: '6', title: '使用Context的组件' }
+        { id: '4', title: '创建TaskContext', description: '' },
+        { id: '5', title: '实现TaskProvider', description: '' },
+        { id: '6', title: '使用Context的组件', description: '' }
       ]
     },
     {
@@ -469,9 +469,9 @@ const TaskManagerWithSync: React.FC = () => {
   // ... 其他代码与TaskManagerWithReducer相同
 };`,
       tasks: [
-        { id: '7', title: '实现Reducer状态管理' },
-        { id: '8', title: '添加状态持久化' },
-        { id: '9', title: '实现状态同步' }
+        { id: '7', title: '实现Reducer状态管理', description: '' },
+        { id: '8', title: '添加状态持久化', description: '' },
+        { id: '9', title: '实现状态同步', description: '' }
       ]
     }
   ]

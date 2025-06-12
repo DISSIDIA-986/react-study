@@ -97,9 +97,9 @@ const SearchInput: React.FC<{ onSearch: (query: string) => void }> = ({ onSearch
   );
 };`,
       tasks: [
-        { id: '1', title: '实现点击事件处理' },
-        { id: '2', title: '添加表单提交处理' },
-        { id: '3', title: '实现键盘事件处理' }
+        { id: '1', title: '实现点击事件处理', description: '' },
+        { id: '2', title: '添加表单提交处理', description: '' },
+        { id: '3', title: '实现键盘事件处理', description: '' }
       ]
     },
     {
@@ -188,9 +188,9 @@ const TaskManager: React.FC = () => {
   );
 };`,
       tasks: [
-        { id: '4', title: '实现任务状态更新' },
-        { id: '5', title: '添加任务过滤功能' },
-        { id: '6', title: '实现批量操作功能' }
+        { id: '4', title: '实现任务状态更新', description: '' },
+        { id: '5', title: '添加任务过滤功能', description: '' },
+        { id: '6', title: '实现批量操作功能', description: '' }
       ]
     },
     {
@@ -284,9 +284,9 @@ const TaskPriority: React.FC<{ priority: 'low' | 'medium' | 'high' }> = ({ prior
   );
 };`,
       tasks: [
-        { id: '7', title: '实现条件渲染' },
-        { id: '8', title: '添加任务状态显示' },
-        { id: '9', title: '实现优先级显示' }
+        { id: '7', title: '实现条件渲染', description: '' },
+        { id: '8', title: '添加任务状态显示', description: '' },
+        { id: '9', title: '实现优先级显示', description: '' }
       ]
     }
   ]
