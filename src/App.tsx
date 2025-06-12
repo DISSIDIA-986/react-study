@@ -1,5 +1,4 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { Navigation } from './components/Navigation';
 import { Home } from './pages/Home/Home';
 import { Chapters } from './pages/Chapters/Chapters';
@@ -9,13 +8,13 @@ import { Challenges } from './pages/Challenges/Challenges';
 import { Reference } from './pages/Reference/Reference';
 import { CourseProvider } from './context/CourseContext';
 
-const App: React.FC = () => {
+function App() {
   return (
     <CourseProvider>
       <Router>
         <div className="min-h-screen bg-gray-50">
           <Navigation />
-          <main className="py-8">
+          <main className="container mx-auto px-4 py-8">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/chapters" element={<Chapters />} />
@@ -29,6 +28,6 @@ const App: React.FC = () => {
       </Router>
     </CourseProvider>
   );
-};
+}
 
 export default App;
