@@ -10,6 +10,7 @@ export const chapter1: Chapter = {
     {
       id: 'section1.1',
       title: 'JSX与组件',
+      description: '',
       content: `JSX是JavaScript的语法扩展，它允许我们在JavaScript中编写类似HTML的代码。
       在React中，我们使用JSX来描述UI应该是什么样子。组件是React应用的基本构建块，
       它们可以接收输入（props）并返回描述屏幕上显示内容的React元素。
@@ -64,6 +65,7 @@ const TaskCard = ({ task }) => {
     {
       id: 'section1.2',
       title: 'Props数据流',
+      description: '',
       content: `Props（属性）是React组件之间传递数据的主要方式。
       它们是从父组件流向子组件的单向数据流。通过props，
       我们可以将数据从父组件传递到子组件，使组件更加可复用。
@@ -136,6 +138,7 @@ const TaskContainer: React.FC<{ children: React.ReactNode }> = ({ children }) =>
     {
       id: 'section1.3',
       title: '初始状态管理',
+      description: '',
       content: `useState是React的一个Hook，它允许我们在函数组件中添加状态。
       通过useState，我们可以创建和管理组件的状态，使组件具有交互性。
 

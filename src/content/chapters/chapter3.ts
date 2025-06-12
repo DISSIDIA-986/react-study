@@ -10,6 +10,7 @@ export const chapter3: Chapter = {
     {
       id: 'section3.1',
       title: '列表渲染',
+      description: '',
       content: `列表渲染是React中常见的模式，用于渲染数组数据。
       理解列表渲染的关键概念和最佳实践对于构建高效的React应用至关重要。
 
@@ -98,6 +99,7 @@ const VirtualTaskList: React.FC<{ tasks: TaskProps[] }> = ({ tasks }) => {
     {
       id: 'section3.2',
       title: '表单处理',
+      description: '',
       content: `表单处理是React应用中的重要部分，包括输入验证、状态管理和提交处理。
       理解表单处理的最佳实践可以帮助构建更好的用户体验。
 
@@ -254,6 +256,7 @@ const TaskForm: React.FC<{ onSubmit: (data: TaskFormData) => void }> = ({ onSubm
     {
       id: 'section3.3',
       title: '表单优化',
+      description: '',
       content: `表单优化是提升用户体验的重要环节，包括性能优化、可访问性和用户体验改进。
 
       关键概念：

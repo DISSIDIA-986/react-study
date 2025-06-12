@@ -10,6 +10,7 @@ export const chapter6: Chapter = {
     {
       id: 'section6.1',
       title: '自定义Hook',
+      description: '',
       content: `自定义Hook是React中复用逻辑的强大工具。
       通过自定义Hook，我们可以将组件逻辑提取到可重用的函数中。
 
@@ -169,6 +170,7 @@ const TaskManager: React.FC = () => {
     {
       id: 'section6.2',
       title: '错误边界',
+      description: '',
       content: `错误边界是React中处理组件树错误的重要机制。
       通过错误边界，我们可以优雅地处理组件中的错误，防止整个应用崩溃。
 
@@ -356,6 +358,7 @@ const TaskManager: React.FC = () => {
     {
       id: 'section6.3',
       title: 'Portal和Context高级用法',
+      description: '',
       content: `Portal和Context是React中强大的特性，用于处理DOM渲染和状态共享。
       通过合理使用这些特性，我们可以构建更灵活和可维护的应用。
 

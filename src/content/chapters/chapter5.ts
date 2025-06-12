@@ -10,6 +10,7 @@ export const chapter5: Chapter = {
     {
       id: 'section5.1',
       title: '渲染优化',
+      description: '',
       content: `React应用的性能优化首先从渲染优化开始。
       理解React的渲染机制和优化技巧对于构建高性能应用至关重要。
 
@@ -134,14 +135,15 @@ const TaskManagerWithReducer: React.FC = () => {
   );
 };`,
       tasks: [
-        { id: '1', title: '使用React.memo优化组件' },
-        { id: '2', title: '实现useMemo优化' },
-        { id: '3', title: '使用useCallback优化回调' }
+        { id: '1', title: '使用React.memo优化组件', description: '' },
+        { id: '2', title: '实现useMemo优化', description: '' },
+        { id: '3', title: '使用useCallback优化回调', description: '' }
       ]
     },
     {
       id: 'section5.2',
       title: '代码分割',
+      description: '',
       content: `代码分割是优化React应用加载性能的重要技术。
       通过代码分割，我们可以将应用拆分成更小的块，实现按需加载。
 
@@ -255,14 +257,15 @@ const TaskManagerWithErrorBoundary: React.FC = () => {
   );
 };`,
       tasks: [
-        { id: '4', title: '实现路由代码分割' },
-        { id: '5', title: '添加组件预加载' },
-        { id: '6', title: '实现错误边界' }
+        { id: '4', title: '实现路由代码分割', description: '' },
+        { id: '5', title: '添加组件预加载', description: '' },
+        { id: '6', title: '实现错误边界', description: '' }
       ]
     },
     {
       id: 'section5.3',
       title: '缓存策略',
+      description: '',
       content: `缓存策略是优化React应用性能的重要手段。
       通过合理的缓存策略，我们可以减少不必要的计算和网络请求。
 
@@ -413,9 +416,9 @@ const TaskManagerWithCachedState: React.FC = () => {
   );
 };`,
       tasks: [
-        { id: '7', title: '实现请求缓存' },
-        { id: '8', title: '添加组件缓存' },
-        { id: '9', title: '优化数据获取策略' }
+        { id: '7', title: '实现请求缓存', description: '' },
+        { id: '8', title: '添加组件缓存', description: '' },
+        { id: '9', title: '优化数据获取策略', description: '' }
       ]
     }
   ]

@@ -10,6 +10,7 @@ export const chapter2: Chapter = {
     {
       id: 'section2.1',
       title: '事件处理',
+      description: '',
       content: `React中的事件处理与DOM事件处理类似，但有一些语法差异。
       所有事件名称都使用驼峰命名法，并且事件处理函数接收一个合成事件对象。
 
@@ -105,7 +106,8 @@ const SearchInput: React.FC<{ onSearch: (query: string) => void }> = ({ onSearch
     {
       id: 'section2.2',
       title: '状态更新',
-      content: `状态更新是React应用中最常见的操作之一。
+      description: '',
+      content: `状态更新是 React 组件交互的核心。
       理解状态更新的机制对于构建可靠的React应用至关重要。
 
       关键概念：
@@ -196,7 +198,8 @@ const TaskManager: React.FC = () => {
     {
       id: 'section2.3',
       title: '条件渲染',
-      content: `条件渲染是React中根据条件显示不同UI的重要特性。
+      description: '',
+      content: `条件渲染允许你根据状态动态显示内容。
       可以使用多种方式实现条件渲染，每种方式都有其适用场景。
 
       关键概念：

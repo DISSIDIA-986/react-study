@@ -10,6 +10,7 @@ export const chapter4: Chapter = {
     {
       id: 'section4.1',
       title: 'Props通信',
+      description: '',
       content: `Props是React组件之间通信的基本方式，理解Props的使用和最佳实践对于构建可维护的React应用至关重要。
 
       关键概念：
@@ -163,6 +164,7 @@ const TaskManager: React.FC = () => {
     {
       id: 'section4.2',
       title: 'Context通信',
+      description: '',
       content: `Context提供了一种在组件树中共享数据的方式，避免了Props钻取。
       理解Context的使用场景和最佳实践对于构建大型React应用很重要。
 
@@ -321,6 +323,7 @@ const TaskManager: React.FC = () => {
     {
       id: 'section4.3',
       title: '状态管理',
+      description: '',
       content: `状态管理是React应用中的重要部分，理解不同的状态管理方案和最佳实践对于构建可维护的应用至关重要。
 
       关键概念：
